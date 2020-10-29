@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap">
+    <title>Expense Manager</title>
+</head>
+
+<body>
+    <div class="heading">
+        Expense Manager
+    </div>
+    <div class="forms">
+        <div class="form-save">
+            <form action="save.php" class="income-form">
+                <label for="">
+                    <h3>Save your income here!!</h3>
+                </label>
+                <input type="number" name="income" placeholder="Enter your income:">
+                <button type="submit">Submit</button>
+            </form>
+            <form action="save.php" class="expense-form">
+                <label for="">
+                    <h3>Save your expenses here!!</h3>
+                </label>
+                <input type="number" name="amount" placeholder="Enter amount spent:">
+                <input type="text" name="desc" placeholder="Enter a description:">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="form-fetch">
+            <h3>Enter what you want to query:</h3>
+            <select name="choices" id="selectmenu">
+                <option value="1" name="total">Total Amount Spent</option>
+                <option value="2" name="summary">Summary of Expenses</option>
+                <option value="3" name="totali">Total Income</option>
+                <option value="4" name="totalb">Total Balance</option>
+            </select>
+            <button class="ajax">Submit</button>
+        </div>
+    </div>
+
+    <div class="output">
+        <div class="total">
+            <h4>You have spent a total amount of :</h4>
+            <h4 class="amount"></h4>
+        </div>
+        <div class="summary">
+            <h4>Following is the summary of all your expenses :</h4>
+            <div class="expense">
+                <h4 class="e1">
+                    Amount
+                </h4>
+                <h4 class="e2">
+                    Description
+                </h4>
+            </div>
+        </div>
+        <div class="income">
+            <h4>Your total income was :</h4>
+            <h4 class="salary"></h4>
+        </div>
+        <div class="balance">
+            <h4>Your total Balance is :</h4>
+            <h4 class="bal"></h4>
+        </div>
+    </div>
+</body>
+
+<script src="index.js"></script>
+
+</html>

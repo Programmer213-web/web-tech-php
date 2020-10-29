@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<finances>
+
+    <income>60</income>
+
+    <expenses>
+        <expense>
+            <amount>10</amount>
+            <desc>House</desc>
+        </expense>
+        <expense>
+            <amount>5</amount>
+            <desc>Food</desc>
+        </expense>
+        <expense>
+            <amount>5</amount>
+            <desc>Electronics</desc>
+        </expense>
+        <expense>
+            <amount>2</amount>
+            <desc>Travel</desc>
+        </expense>
+    </expenses>
+
+</finances>
